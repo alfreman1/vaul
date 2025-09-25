@@ -1,12 +1,11 @@
-## Blog-Backend-REST-API-NestJS-Prisma 
+## Nestjs Vault
 
-A simple backend REST API for a blog built using NestJS, Prisma, PostgreSQL and Swagger. 
+gestor de contraseñas
 
-### Installation
+### Instalación
 
-1. Install dependencies: `npm install`
-2. Start a PostgreSQL database with docker using: `docker-compose up -d`. 
-    - If you have a local instance of PostgreSQL running, you can skip this step. In this case, you will need to change the `DATABASE_URL` inside the `.env` file with a valid [PostgreSQL connection string](https://www.prisma.io/docs/concepts/database-connectors/postgresql#connection-details) for your database. 
-3. Apply database migrations: `npx prisma migrate dev` 
-4. Start the project:  `npm run start:dev`
-5. Access the project at http://localhost:3000/api
+1.  `npm install`
+2.  configurar la variable de entorno con la contraseña de postgres: `DATABASE_URL` en el `.env`.
+3.  Ejecutar las migraciones `npx prisma migrate dev`
+4.  Levantar el proyecto `npm run start:dev`
+5.  Acceder al proyecto con http://localhost:3000/api
